@@ -1,0 +1,820 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+header {
+  min-height: 200px;
+  border: 2px solid red;
+  margin-bottom: 5px;
+}
+
+.banner {
+  max-width: 1000px;
+  /* height: 500px; */
+  margin: 0 auto;
+  background-image: url(../images/Group\ 13.png);
+  background-repeat: no-repeat;
+  padding: 100px;
+}
+
+.banner-title {
+  color: #fff;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 800;
+  width: 596px;
+  margin: 0 auto;
+}
+
+.bannerdesc {
+  margin-top: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.select-section {
+  max-width: 800px;
+  /* height: 84px; */
+  margin: 30px auto;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 16px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.where,
+.when,
+.selecttype {
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  background: #fff;
+}
+.where > h5 {
+  color: rgba(19, 19, 24, 0.5);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.when {
+  position: relative;
+}
+
+.when > h5 {
+  display: inline;
+  position: relative;
+  left: 20px;
+  color: rgba(19, 19, 24, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+}
+.when > img {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  top: 10px;
+  left: 80px;
+}
+
+.selecttype {
+  position: relative;
+}
+
+.selecttype > h5 {
+  display: inline;
+  position: relative;
+  left: 20px;
+  color: rgba(19, 19, 24, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.selecttype > img {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  top: 10px;
+  left: 50px;
+}
+
+.findNow {
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  background: #ff5400;
+  position: relative;
+}
+
+.findNow img {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 10px;
+  left: 15px;
+}
+
+.findNow h5 {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  bottom: 15px;
+}
+
+/* Second section code starts here */
+
+.populartourcontent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.firsrdiv {
+  width: 48%;
+}
+
+.readmore {
+  width: 150px;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 20px;
+  font-weight: 800;
+  border-radius: 8px;
+  background: #ff5400;
+  margin-top: 20px;
+}
+
+.seconddiv {
+  width: 48%;
+}
+
+.seconddiv img {
+  width: 100%;
+}
+
+.populartours {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.commonpopulartours {
+  color: rgba(19, 19, 24, 0.7);
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.bulletpoint::before {
+  content: "\2022";
+  /* Unicode for bullet point */
+}
+
+.travellingdesc {
+  margin-top: 10px;
+  color: #5a5a5d;
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  width: 500px;
+}
+
+/* Second section code ends here... */
+
+/* destination section css code starts from here */
+
+.destination-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.destination-heading {
+  color: #131318;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.destination-desc {
+  color: rgba(19, 19, 24, 0.7);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.destinationimagecontainer {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin-top: 10px;
+}
+
+.destinationimagecontainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.destiname {
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.griditem-1 {
+  /* Code for spaning column */
+  grid-column: 1 / span 6;
+  /* Code for spaning row */
+  grid-row: 1 / span 1;
+
+  position: relative;
+}
+.Maldives {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.griditem-2 {
+  grid-column: 7 / span 6;
+  grid-row: 1 / span 1;
+  position: relative;
+}
+
+.Indonesia {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.griditem-3 {
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 1;
+  position: relative;
+}
+
+.SriLanka {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+
+.griditem-4 {
+  grid-column: 4 / span 6;
+  grid-row: 2 / span 1;
+  position: relative;
+}
+
+.NorthAmerica {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+
+.griditem-5 {
+  grid-column: 10 / span 3;
+  grid-row: 2 / span 1;
+  position: relative;
+}
+
+.Kashmir {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+
+.griditem-6 {
+  grid-column: 1 / span 4;
+  grid-row: 3 / span 1;
+  position: relative;
+}
+
+.Bangladesh {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+.griditem-7 {
+  grid-column: 5 / span 8;
+  grid-row: 3 / span 1;
+  position: relative;
+}
+
+.Bandarbhan {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+}
+
+/* destination section  css code ends here */
+
+/* Why Choose Us section.... */
+
+.whyChooseUs {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.chooseUsheading {
+  color: #131318;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.chooseUsDescription {
+  color: rgba(19, 19, 24, 0.7);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.chooseUsContainer {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.singleChoose {
+  flex-basis: 480px;
+}
+
+.fa-solid {
+  width: 32px;
+  height: 32px;
+}
+
+.common-description {
+  color: #131318;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.common-paragraph {
+  color: #5a5a5d;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.hotel {
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+}
+
+.loction {
+  border-radius: 16px;
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+
+.best {
+  border-radius: 16px;
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background: rgba(233, 68, 68, 0.05);
+}
+
+/* Why Choose Us Ends here... */
+
+/* second last section starts from here */
+
+.secondlastsection {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.divcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsletterform {
+  width: 50%;
+  position: relative;
+}
+
+.newsletterimage {
+  width: 50%;
+}
+
+.subscribe-img {
+  width: 100%;
+}
+
+.save {
+  width: 250px;
+  height: 100px;
+  border-radius: 16px;
+  background: #ff5400;
+  position: relative;
+  bottom: 150px;
+  left: 280px;
+  transform: rotate(-45deg);
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.sectionhead {
+  color: #131318;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.request {
+  color: #5a5a5d;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.name {
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  margin-top: 10px;
+  width: 300px;
+  height: 40px;
+  color: rgba(19, 19, 24, 0.3);
+  font-size: 16px;
+}
+
+.email {
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  margin-top: 10px;
+  width: 300px;
+  height: 40px;
+  color: rgba(19, 19, 24, 0.3);
+  font-size: 16px;
+}
+
+.subscribe {
+  margin-top: 5px;
+  width: 300px;
+  height: 40px;
+  border-radius: 8px;
+  background: #ff5400;
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* second last section ends here.... */
+
+/* responsive code is starting here */
+
+@media only screen and (max-width: 600px) {
+  .banner {
+    padding: 10px;
+    outline: solid 2px green;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .banner-title {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 800;
+    width: 205px;
+    height: 28px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .bannerdesc {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .select-section {
+    max-width: 80%;
+    height: auto;
+    margin: 10px auto;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .where {
+    padding-right: 150px;
+  }
+
+  .where,
+  .when,
+  .selecttype {
+    width: 240px;
+    height: 52px;
+    border-radius: 8px;
+    background: #fff;
+  }
+
+  .findNow {
+    width: 240px;
+    height: 52px;
+    background: #ff5400;
+  }
+
+  .when > img {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    top: 10px;
+    left: 140px;
+  }
+
+  .selecttype > img {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    top: 10px;
+    left: 100px;
+  }
+
+  /* second  section responsive code starts here */
+
+  .populartours {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .populartourcontent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .firsrdiv {
+    max-width: 100%;
+  }
+
+  .popularhone {
+    color: #131318;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    width: 178px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .commonpopulartours {
+    color: rgba(19, 19, 24, 0.7);
+    font-family: Mulish;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 20px;
+    width: 500px;
+  }
+
+  .seconddiv {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .seconddiv img {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  /* second section responsive code ends here */
+
+  /* destination section responsive code starts here... */
+
+  .destination-section {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .destination-heading {
+    color: #131318;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .destination-desc {
+    color: rgba(19, 19, 24, 0.7);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 5px;
+  }
+
+  .destinationimagecontainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    margin-top: 10px;
+  }
+
+  .destinationimagecontainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .destiname {
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+  }
+
+  .griditem-1 {
+    /* Code for spaning column */
+    grid-column: 1 / span 1;
+    /* Code for spaning row */
+    grid-row: 1 / span 1;
+
+    position: relative;
+  }
+  .Maldives {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+  }
+
+  .griditem-2 {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    position: relative;
+  }
+
+  .Indonesia {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+  }
+
+  .griditem-3 {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    position: relative;
+  }
+
+  .SriLanka {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+  }
+
+  .griditem-4 {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+    position: relative;
+  }
+
+  .NorthAmerica {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+  }
+
+  .griditem-5 {
+    grid-column: 1 / span 1;
+    grid-row: 5 / span 1;
+    position: relative;
+  }
+
+  .Kashmir {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+  }
+
+  .griditem-6 {
+    grid-column: 1 / span 1;
+    grid-row: 6 / span 1;
+    position: relative;
+  }
+
+  .Bangladesh {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+  }
+  .griditem-7 {
+    grid-column: 1 / span 1;
+    grid-row: 7 / span 1;
+    position: relative;
+  }
+
+  .Bandarbhan {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+  }
+
+  /* why choose us section responsive starts here... */
+
+  .chooseUsheading {
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .chooseUsDescription {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  /* why choose us section ends here... */
+
+  /* destination section responsive code ends here */
+
+  .secondlastsection {
+    max-width: 480px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .divcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newsletterform {
+    width: 90%;
+  }
+
+  .newsletterimage {
+    width: 90%;
+  }
+
+  .subscribe-img {
+    width: 70%;
+    object-fit: cover;
+  }
+
+  .save {
+    width: 200px;
+    height: 80px;
+    border-radius: 10px;
+    background: #ff5400;
+    position: relative;
+    bottom: 150px;
+    left: 280px;
+    transform: rotate(-45deg);
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .sectionhead {
+    font-size: 20px;
+  }
+
+  .request {
+    font-size: 14px;
+  }
+
+  /* responsive code for second last section starts here... */
+}
