@@ -177,7 +177,7 @@ main {
   color: #fff;
   text-align: center;
   font-family: Mulish;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 800;
   border-radius: 8px;
   background: #ff5400;
@@ -195,7 +195,7 @@ main {
 .commonpopulartours {
   color: rgba(19, 19, 24, 0.7);
   font-family: Mulish;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   margin-top: 20px;
 }
@@ -209,7 +209,7 @@ main {
   margin-top: 10px;
   color: #5a5a5d;
   font-family: Mulish;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   width: 500px;
 }
@@ -577,7 +577,9 @@ main {
   /* popular tour   section responsive code starts here */
 
   .populartours {
-    padding: 20px;
+    margin: 0 20px;
+    padding: 5px;
+    border: 2px solid green;
   }
 
   .populartourcontent {
@@ -605,7 +607,12 @@ main {
     font-size: 0.8rem;
     font-weight: 400;
     margin-top: 20px;
-    width: 500px;
+    width: 330px;
+  }
+
+  .travellingdesc {
+    font-size: 0.8rem;
+    width: 330px;
   }
 
   .seconddiv {
