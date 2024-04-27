@@ -10,14 +10,76 @@ body {
   font-family: "Mulish", sans-serif;
 }
 
+.hero-travel {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.Hero {
+  color: var(--Dark-01, #131318);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.Travel {
+  color: #ff5400;
+  font-family: Mulish;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
 /* common styles ends here... */
 
 /* header starts here.. */
 
 header {
-  min-height: 200px;
-  border: 2px solid red;
-  margin-bottom: 5px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-items-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fa-solid.fa-bars {
+  display: none;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-items li {
+  margin-right: 5px;
+  list-style: none;
+}
+
+.nav-items a {
+  text-decoration: none;
+}
+
+.home {
+  color: #ff5400;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.general {
+  color: var(--Dark-02, #424247);
+  text-align: center;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
 }
 
 /* header ends here */
@@ -37,6 +99,7 @@ main {
   background-image: url(../images/Group\ 13.png);
   background-repeat: no-repeat;
   padding: 100px;
+  margin-top: 10px;
 }
 
 .banner-title {
@@ -507,13 +570,94 @@ main {
 
 /* second last section ends here.... */
 
+/* footer section is started here */
+
+footer {
+  padding: 100px 300px;
+  background: rgba(19, 19, 24, 0.05);
+  margin-top: 10px;
+}
+
+/* .footer-container {
+  margin-left: 335px;
+  padding-top: 100px;
+} */
+
+.footer-p {
+  color: #5a5a5d;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.footer-image {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.footer-image img {
+  width: 100%;
+}
+
+.horizontal-line {
+  background: rgba(19, 19, 24, 0.1);
+  margin: 20px 0;
+}
+
+.header-finish {
+  color: #131318;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* footer section ends here... */
+
 /* responsive code is starting here for small devices */
 
 @media only screen and (max-width: 600px) {
+  /* reponsive header section starts here... */
+
+  /* responsive header section ends here... */
+
+  header {
+    padding: 5px;
+    margin: 0 20px;
+  }
+
+  .hero-travel img {
+    width: 28px;
+    height: 30px;
+  }
+
+  .Hero {
+    font-size: 1.3rem;
+  }
+
+  .Travel {
+    font-size: 1.3rem;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .fa-solid.fa-bars {
+    display: block;
+    margin-top: 5px;
+  }
+
   /* responsive for banner section starts here.... */
+
   .banner {
     padding: 5px;
     margin: 0 20px;
+    margin-top: 5px;
   }
 
   .banner-title {
@@ -629,7 +773,7 @@ main {
   /* destination section responsive code starts here... */
 
   .destination-section {
-    margin-top: 30px;
+    margin: 30px 20px;
   }
 
   .destination-heading {
@@ -756,6 +900,10 @@ main {
 
   /* why choose us section responsive starts here... */
 
+  .whyChooseUs {
+    margin: 20px 20px;
+  }
+
   .chooseUsheading {
     font-size: 20px;
     font-weight: 800;
@@ -771,7 +919,7 @@ main {
   /* responsive code for second last section starts  here... */
 
   .secondlastsection {
-    margin-top: 30px;
+    margin: 20px 20px;
   }
 
   .divcontainer {
@@ -781,28 +929,36 @@ main {
   }
 
   .newsletterform {
-    width: 90%;
+    width: 100%;
   }
 
   .newsletterimage {
-    width: 90%;
+    margin-top: 5px;
+    width: 100%;
   }
 
   .subscribe-img {
-    width: 70%;
+    width: 100%;
+    height: 90%;
     object-fit: cover;
     position: relative;
   }
 
   .save {
     width: 200px;
-    height: 80px;
+    height: 70px;
     border-radius: 10px;
     background: #ff5400;
-    position: relative;
+    /* position: relative;
     bottom: 150px;
     left: 280px;
-    transform: rotate(-65deg);
+    transform: rotate(-65deg); */
+    position: relative;
+
+    /* transform: rotate(60deg); */
+    right: 100px;
+    bottom: 140px;
+    left: 150px;
     color: #fff;
     text-align: center;
     font-size: 16px;
@@ -818,4 +974,17 @@ main {
   }
 
   /* responsive code for second last section ends  here... */
+
+  /* responsive code for footer section*/
+
+  footer {
+    padding: 20px 80px;
+  }
+
+  .footer-p {
+    color: #5a5a5d;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
 }
